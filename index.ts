@@ -1,13 +1,12 @@
-import Express from "express";
+const Express = require("express");
+const database_connection = require("./database/connection");
 
 const app = Express();
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello World By Chat</h1>");
-});
+database_connection();
 
-app.get("/hello", (req, res) => {
-  res.send("<h1>Hello World By Hello</h1>");
+app.get("/", (req, res) => {
+  res.send("");
 });
 
 const Port: number = 8080;
