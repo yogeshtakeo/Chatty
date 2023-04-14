@@ -48,9 +48,9 @@ const Sidebar = () => {
 export default Sidebar;
 
 const Container = styled.div((props) => ({
+  flex:3,
   display: "flex",
   flexDirection: "column",
-  width: "20%",
   backgroundColor: "#879DEB",
   minHeight: "100%",
 }));
@@ -61,5 +61,5 @@ const UserListContainer = styled.div(() => ({
   gap: "1rem",
   overflowY: "scroll",
   overflowx: "hidden",
-  minheight:"100%"
+  minheight: "100%",
 }));
