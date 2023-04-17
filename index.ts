@@ -1,13 +1,14 @@
 import Express from "express";
 import database_connection from "./database/connection";
+import AuthenticationRouter from "./routes/User/Authenticate.route";
 
 const app = Express();
 
 database_connection();
 
-app.get("/", (req, res) => {
-  res.send("");
-});
+app.use(Express.json());
+
+app.use("/user", AuthenticationRouter);
 
 const Port: number = 8080;
 app.listen(Port, () => {

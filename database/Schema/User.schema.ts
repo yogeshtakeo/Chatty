@@ -5,7 +5,7 @@ export interface IUser {
   email: String;
 }
 
-const UserSchema = new Schema({
+const UserSchema = new Schema<IUser>({
   name: {
     type: String,
     required: true,
