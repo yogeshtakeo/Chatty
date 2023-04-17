@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const database_connection = async () => {
   const connection = await mongoose.connect(
@@ -11,4 +11,5 @@ const database_connection = async () => {
     console.log("Connection to the database failed");
   }
 };
-module.exports = database_connection;
+
+export default database_connection;

@@ -18,12 +18,14 @@ const Container = styled.form(() => ({
   padding: "1rem",
   gap: "1rem",
 }));
+
 const Input = styled.input(() => ({
   flex: 9,
   padding: "1rem",
   width: "max-content",
   borderRadius: "10px",
 }));
+
 const Button = styled.button(() => ({
   flex: 1,
   padding: "1rem",

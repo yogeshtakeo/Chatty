@@ -1,5 +1,5 @@
-const Express = require("express");
-const database_connection = require("./database/connection");
+import Express from "express";
+import database_connection from "./database/connection";
 
 const app = Express();
 

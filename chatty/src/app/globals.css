@@ -16,6 +16,15 @@ body {
   width: 100%;
 }
 
+.LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #879deb;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
